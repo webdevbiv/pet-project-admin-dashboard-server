@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import helmet from "helmet";
@@ -50,4 +50,4 @@ mongoose
     console.log(`Did not connect: ${error.message}`);
   });
 
-/* --------------- https://youtu.be/0cPCMIuDk2I?list=LL&t=1242 -------------- */
+/* --------------- https://youtu.be/0cPCMIuDk2I?list=LL&t=1245 -------------- */
