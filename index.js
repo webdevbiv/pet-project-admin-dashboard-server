@@ -30,3 +30,5 @@ app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
+
+/* --------------- https://youtu.be/0cPCMIuDk2I?list=LL&t=1089 -------------- */
