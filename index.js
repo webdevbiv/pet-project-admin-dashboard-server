@@ -10,6 +10,10 @@ import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
+/* ------------------------------ Data Imports ------------------------------ */
+import User from "./models/User.js";
+import { dataUser } from "./data/index.js";
+
 /* -------------------------------------------------------------------------- */
 /*                               Configurations                               */
 /* -------------------------------------------------------------------------- */
@@ -44,10 +48,12 @@ mongoose
   .then(() => {
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
+      /* ------------------------------ Only One Time ----------------------------- */
+      // User.insertMany(dataUser);
     });
   })
   .catch((error) => {
     console.log(`Did not connect: ${error.message}`);
   });
 
-/* --------------- https://youtu.be/0cPCMIuDk2I?list=LL&t=1245 -------------- */
+/* --------------- https://youtu.be/0cPCMIuDk2I?list=LL&t=6688 -------------- */
